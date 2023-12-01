@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Topbar from './components/topbar/Topbar'
+import home from './pages/home/home'
 
 function App() {
 
 
   return (
     <>
-     <Topbar/>
+      <home/>
     </>
   )
 }
