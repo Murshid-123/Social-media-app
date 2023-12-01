@@ -8,6 +8,7 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import EventIcon from '@mui/icons-material/Event';
 import SchoolIcon from '@mui/icons-material/School';
+import Friendpic from '../../assets/person/2.jpeg'
 //import { Users } from "../../dummyData";
 //import CloseFriend from "../closeFriend/CloseFriend";
 
@@ -55,11 +56,14 @@ export default function Sidebar() {
         </ul>
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
-        {/* <ul className="sidebarFriendList">
-          {Users.map((u) => (
-            <CloseFriend key={u.id} user={u} />
-          ))}
-        </ul> */}
+        <ul className="sidebarFriendList">
+          <li className="sidebarFriend">
+            <img src={Friendpic} alt="" className="sidebarFriendImg" />
+            <span className="sidebarFriendName">
+              hila hal
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   );

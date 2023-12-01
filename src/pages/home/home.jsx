@@ -1,22 +1,22 @@
 import React from 'react'
-import topbar from "../../components/topbar/Topbar";
-import sidebar from "../../components/sidebar/Sidebar";
-import feed from "../../components/feed/feed";
-import Rightbar from "../../components/rightbar/rightbar";
+import Topbar from "../../components/topbar/Topbar";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Feed from "../../components/feed/Feed";
+import Rightbar from "../../components/rightbar/Rightbar";
 import "./home.css"
 
-function home() {
+function Home() {
   return (
         <div>
-            <topbar />
+            <Topbar />
             <div className="homeContainer">
-                <sidebar />
-                <feed/>
-                <rightbar/>
+                <Sidebar />
+                <Feed/>
+                <Rightbar/>
             </div>
         </div>
     
   )
 }
 
-export default home
+export default Home
