@@ -1,7 +1,10 @@
 import React from 'react'
-import './Share.css'
+import './share.css'
 import Profileimg from '../../assets/person/1.jpeg'
 import PermMediaIcon from '@mui/icons-material/PermMedia';
+import LabelIcon from '@mui/icons-material/Label';
+import RoomIcon from '@mui/icons-material/Room';
+import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 
 function Share() {
   return (
@@ -14,25 +17,28 @@ function Share() {
                     className="shareInput"
                 />
             </div>
+            <hr className="shareHr"/>
             <div className="shareBottom">
                 <div className="shareOptions">
                     <div className="shareOption">
-                        <PermMedia htmlColor="tomato" className="shareIcon"/>
+                        <PermMediaIcon htmlColor="tomato" className="shareIcon"/>
                         <span className="shareOptionText">Photo or Video</span>
                     </div>
                     <div className="shareOption">
-                        <Label htmlColor="blue" className="shareIcon"/>
+                        <LabelIcon htmlColor="blue" className="shareIcon"/>
                         <span className="shareOptionText">Tag</span>
                     </div>
                     <div className="shareOption">
-                        <Room htmlColor="green" className="shareIcon"/>
+                        <RoomIcon htmlColor="green" className="shareIcon"/>
                         <span className="shareOptionText">Location</span>
                     </div>
                     <div className="shareOption">
-                        <EmojiEmotions htmlColor="goldenrod" className="shareIcon"/>
+                        <InsertEmoticonIcon htmlColor="goldenrod" className="shareIcon"/>
                         <span className="shareOptionText">Feelings</span>
                     </div>
+                    
                 </div>
+                <button className="shareButton">Share</button>
             </div>
         </div>
     </div>
